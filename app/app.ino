@@ -9,11 +9,8 @@
 #define ALARM_BAT_LEVEL 25     // 内蔵バッテリーレベル[%]の警告表示のしきい値
 
 hw_timer_t * presenTimer = NULL;
-// hw_timer_t * monitorTimer = NULL;
 
-// hw_timer_t * presenTimer, * monitorTimer = NULL;
-
-BleKeyboard bleKeyboard("EPH-Presenter");
+BleKeyboard bleKeyboard("only-my-laser");
 
 bool FlagBleConnected = false;  // Bluetoothの接続判定フラグ。接続済:true / 未接続:false
 unsigned long nextMonitorMills = 0;  // 次回のモニタを更新するミリ秒を格納する
